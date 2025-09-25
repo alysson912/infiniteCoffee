@@ -6,23 +6,64 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		4BEA35262E84A97500C08497 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BEA35222E84A97500C08497 /* Assets.xcassets */; };
+		4BEA35272E84A97500C08497 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEA35232E84A97500C08497 /* ContentView.swift */; };
+		4BEA35282E84A97500C08497 /* InfiniteCoffeeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEA35242E84A97500C08497 /* InfiniteCoffeeApp.swift */; };
+		4BEA352B2E84A98F00C08497 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEA352A2E84A98F00C08497 /* HomeView.swift */; };
+		4BEA352D2E84A9AC00C08497 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEA352C2E84A9AC00C08497 /* HomeViewModel.swift */; };
+		4BEA352F2E84AA2F00C08497 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEA352E2E84AA2F00C08497 /* TabBarView.swift */; };
+		4BEA35452E84AD7600C08497 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEA35432E84AD7600C08497 /* OrderView.swift */; };
+		4BEA35492E84ADB700C08497 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEA35482E84ADB700C08497 /* AccountView.swift */; };
+		4BEA355A2E84B01900C08497 /* CoffeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEA35592E84B01900C08497 /* CoffeModel.swift */; };
+		4BEA355E2E84B09700C08497 /* MainCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEA355D2E84B09700C08497 /* MainCardCell.swift */; };
+		4BEA35612E84B17B00C08497 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 4BEA35602E84B17B00C08497 /* SDWebImageSwiftUI */; };
+		4BEA35642E84B20100C08497 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 4BEA35632E84B20100C08497 /* FirebaseAnalytics */; };
+		4BEA35662E84B20100C08497 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 4BEA35652E84B20100C08497 /* FirebaseAuth */; };
+		4BEA35682E84B20100C08497 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 4BEA35672E84B20100C08497 /* FirebaseCore */; };
+		4BEA356A2E84B20100C08497 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 4BEA35692E84B20100C08497 /* FirebaseCrashlytics */; };
+		4BEA356C2E84B20100C08497 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 4BEA356B2E84B20100C08497 /* FirebaseDatabase */; };
+		4BEA356E2E84B20100C08497 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 4BEA356D2E84B20100C08497 /* FirebaseFirestore */; };
+		4BEA35702E84B20100C08497 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 4BEA356F2E84B20100C08497 /* FirebaseFunctions */; };
+		4BEA35722E84B20100C08497 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 4BEA35712E84B20100C08497 /* FirebaseStorage */; };
+		4BEA35752E84B22300C08497 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 4BEA35742E84B22300C08497 /* GoogleSignIn */; };
+		4BEA35772E84B22300C08497 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4BEA35762E84B22300C08497 /* GoogleSignInSwift */; };
+		4BEA357A2E84B26E00C08497 /* ImageLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEA35792E84B26E00C08497 /* ImageLoaderView.swift */; };
+		4BEA357C2E84B29B00C08497 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEA357B2E84B29B00C08497 /* Constants.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		4BEA34E72E848FF300C08497 /* InfiniteCoffee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfiniteCoffee.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BEA35222E84A97500C08497 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4BEA35232E84A97500C08497 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4BEA35242E84A97500C08497 /* InfiniteCoffeeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteCoffeeApp.swift; sourceTree = "<group>"; };
+		4BEA352A2E84A98F00C08497 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		4BEA352C2E84A9AC00C08497 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		4BEA352E2E84AA2F00C08497 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		4BEA35432E84AD7600C08497 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		4BEA35482E84ADB700C08497 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		4BEA35592E84B01900C08497 /* CoffeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeModel.swift; sourceTree = "<group>"; };
+		4BEA355D2E84B09700C08497 /* MainCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCardCell.swift; sourceTree = "<group>"; };
+		4BEA35792E84B26E00C08497 /* ImageLoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderView.swift; sourceTree = "<group>"; };
+		4BEA357B2E84B29B00C08497 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		4BEA34E92E848FF300C08497 /* InfiniteCoffee */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = InfiniteCoffee;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4BEA34E42E848FF300C08497 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BEA356C2E84B20100C08497 /* FirebaseDatabase in Frameworks */,
+				4BEA35642E84B20100C08497 /* FirebaseAnalytics in Frameworks */,
+				4BEA35722E84B20100C08497 /* FirebaseStorage in Frameworks */,
+				4BEA35662E84B20100C08497 /* FirebaseAuth in Frameworks */,
+				4BEA35702E84B20100C08497 /* FirebaseFunctions in Frameworks */,
+				4BEA35752E84B22300C08497 /* GoogleSignIn in Frameworks */,
+				4BEA356A2E84B20100C08497 /* FirebaseCrashlytics in Frameworks */,
+				4BEA35682E84B20100C08497 /* FirebaseCore in Frameworks */,
+				4BEA35612E84B17B00C08497 /* SDWebImageSwiftUI in Frameworks */,
+				4BEA356E2E84B20100C08497 /* FirebaseFirestore in Frameworks */,
+				4BEA35772E84B22300C08497 /* GoogleSignInSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,7 +73,7 @@
 		4BEA34DE2E848FF300C08497 = {
 			isa = PBXGroup;
 			children = (
-				4BEA34E92E848FF300C08497 /* InfiniteCoffee */,
+				4BEA35252E84A97500C08497 /* InfiniteCoffee */,
 				4BEA34E82E848FF300C08497 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +84,113 @@
 				4BEA34E72E848FF300C08497 /* InfiniteCoffee.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		4BEA35202E84A97500C08497 /* scenes */ = {
+			isa = PBXGroup;
+			children = (
+				4BEA352E2E84AA2F00C08497 /* TabBarView.swift */,
+				4BEA35292E84A98000C08497 /* Home */,
+				4BEA35472E84ADAD00C08497 /* Accont */,
+				4BEA35442E84AD7600C08497 /* Order */,
+			);
+			path = scenes;
+			sourceTree = "<group>";
+		};
+		4BEA35212E84A97500C08497 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				4BEA35582E84B00600C08497 /* Model */,
+				4BEA35302E84AA8700C08497 /* Components */,
+				4BEA35202E84A97500C08497 /* scenes */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		4BEA35252E84A97500C08497 /* InfiniteCoffee */ = {
+			isa = PBXGroup;
+			children = (
+				4BEA35782E84B25000C08497 /* Shared */,
+				4BEA355B2E84B04F00C08497 /* Components */,
+				4BEA35212E84A97500C08497 /* core */,
+				4BEA35222E84A97500C08497 /* Assets.xcassets */,
+				4BEA35232E84A97500C08497 /* ContentView.swift */,
+				4BEA35242E84A97500C08497 /* InfiniteCoffeeApp.swift */,
+			);
+			path = InfiniteCoffee;
+			sourceTree = "<group>";
+		};
+		4BEA35292E84A98000C08497 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4BEA352C2E84A9AC00C08497 /* HomeViewModel.swift */,
+				4BEA352A2E84A98F00C08497 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4BEA35302E84AA8700C08497 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		4BEA35442E84AD7600C08497 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				4BEA35432E84AD7600C08497 /* OrderView.swift */,
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		4BEA35472E84ADAD00C08497 /* Accont */ = {
+			isa = PBXGroup;
+			children = (
+				4BEA35482E84ADB700C08497 /* AccountView.swift */,
+			);
+			path = Accont;
+			sourceTree = "<group>";
+		};
+		4BEA35582E84B00600C08497 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4BEA35592E84B01900C08497 /* CoffeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4BEA355B2E84B04F00C08497 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4BEA355C2E84B05800C08497 /* Cells */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		4BEA355C2E84B05800C08497 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4BEA357D2E8577A500C08497 /* Home */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		4BEA35782E84B25000C08497 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				4BEA35792E84B26E00C08497 /* ImageLoaderView.swift */,
+				4BEA357B2E84B29B00C08497 /* Constants.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		4BEA357D2E8577A500C08497 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4BEA355D2E84B09700C08497 /* MainCardCell.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -60,11 +208,19 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				4BEA34E92E848FF300C08497 /* InfiniteCoffee */,
-			);
 			name = InfiniteCoffee;
 			packageProductDependencies = (
+				4BEA35602E84B17B00C08497 /* SDWebImageSwiftUI */,
+				4BEA35632E84B20100C08497 /* FirebaseAnalytics */,
+				4BEA35652E84B20100C08497 /* FirebaseAuth */,
+				4BEA35672E84B20100C08497 /* FirebaseCore */,
+				4BEA35692E84B20100C08497 /* FirebaseCrashlytics */,
+				4BEA356B2E84B20100C08497 /* FirebaseDatabase */,
+				4BEA356D2E84B20100C08497 /* FirebaseFirestore */,
+				4BEA356F2E84B20100C08497 /* FirebaseFunctions */,
+				4BEA35712E84B20100C08497 /* FirebaseStorage */,
+				4BEA35742E84B22300C08497 /* GoogleSignIn */,
+				4BEA35762E84B22300C08497 /* GoogleSignInSwift */,
 			);
 			productName = InfiniteCoffee;
 			productReference = 4BEA34E72E848FF300C08497 /* InfiniteCoffee.app */;
@@ -94,6 +250,11 @@
 			);
 			mainGroup = 4BEA34DE2E848FF300C08497;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				4BEA355F2E84B17B00C08497 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				4BEA35622E84B20100C08497 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				4BEA35732E84B22300C08497 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 4BEA34E82E848FF300C08497 /* Products */;
 			projectDirPath = "";
@@ -109,6 +270,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BEA35262E84A97500C08497 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +281,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BEA352B2E84A98F00C08497 /* HomeView.swift in Sources */,
+				4BEA357C2E84B29B00C08497 /* Constants.swift in Sources */,
+				4BEA35272E84A97500C08497 /* ContentView.swift in Sources */,
+				4BEA35282E84A97500C08497 /* InfiniteCoffeeApp.swift in Sources */,
+				4BEA357A2E84B26E00C08497 /* ImageLoaderView.swift in Sources */,
+				4BEA35452E84AD7600C08497 /* OrderView.swift in Sources */,
+				4BEA35492E84ADB700C08497 /* AccountView.swift in Sources */,
+				4BEA352F2E84AA2F00C08497 /* TabBarView.swift in Sources */,
+				4BEA352D2E84A9AC00C08497 /* HomeViewModel.swift in Sources */,
+				4BEA355A2E84B01900C08497 /* CoffeModel.swift in Sources */,
+				4BEA355E2E84B09700C08497 /* MainCardCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +505,91 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4BEA355F2E84B17B00C08497 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.3;
+			};
+		};
+		4BEA35622E84B20100C08497 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.3.0;
+			};
+		};
+		4BEA35732E84B22300C08497 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4BEA35602E84B17B00C08497 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BEA355F2E84B17B00C08497 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		4BEA35632E84B20100C08497 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BEA35622E84B20100C08497 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		4BEA35652E84B20100C08497 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BEA35622E84B20100C08497 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		4BEA35672E84B20100C08497 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BEA35622E84B20100C08497 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		4BEA35692E84B20100C08497 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BEA35622E84B20100C08497 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		4BEA356B2E84B20100C08497 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BEA35622E84B20100C08497 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		4BEA356D2E84B20100C08497 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BEA35622E84B20100C08497 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		4BEA356F2E84B20100C08497 /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BEA35622E84B20100C08497 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		4BEA35712E84B20100C08497 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BEA35622E84B20100C08497 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		4BEA35742E84B22300C08497 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BEA35732E84B22300C08497 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		4BEA35762E84B22300C08497 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BEA35732E84B22300C08497 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4BEA34DF2E848FF300C08497 /* Project object */;
 }
