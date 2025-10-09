@@ -6,4 +6,14 @@
 //
 
 import Foundation
+import Combine
 
+ class HomeViewModel: ObservableObject {
+    
+    @Published var data: [CoffeModel] = []
+    
+   
+     public func fetchRequest() {
+         
+     }
+}

@@ -30,6 +30,8 @@
 		4BEA35772E84B22300C08497 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4BEA35762E84B22300C08497 /* GoogleSignInSwift */; };
 		4BEA357A2E84B26E00C08497 /* ImageLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEA35792E84B26E00C08497 /* ImageLoaderView.swift */; };
 		4BEA357C2E84B29B00C08497 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEA357B2E84B29B00C08497 /* Constants.swift */; };
+		FF8CD4BB2E97EDC50032C439 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF8CD4BA2E97EDC50032C439 /* GoogleService-Info.plist */; };
+		FFECC2652E8F208600F9AE8C /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFECC2642E8F208600F9AE8C /* HomeService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		4BEA355D2E84B09700C08497 /* MainCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCardCell.swift; sourceTree = "<group>"; };
 		4BEA35792E84B26E00C08497 /* ImageLoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderView.swift; sourceTree = "<group>"; };
 		4BEA357B2E84B29B00C08497 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FF8CD4BA2E97EDC50032C439 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FFECC2642E8F208600F9AE8C /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +105,6 @@
 			isa = PBXGroup;
 			children = (
 				4BEA35582E84B00600C08497 /* Model */,
-				4BEA35302E84AA8700C08497 /* Components */,
 				4BEA35202E84A97500C08497 /* scenes */,
 			);
 			path = core;
@@ -110,12 +113,14 @@
 		4BEA35252E84A97500C08497 /* InfiniteCoffee */ = {
 			isa = PBXGroup;
 			children = (
+				FFECC2632E8F205300F9AE8C /* Service */,
 				4BEA35782E84B25000C08497 /* Shared */,
 				4BEA355B2E84B04F00C08497 /* Components */,
 				4BEA35212E84A97500C08497 /* core */,
 				4BEA35222E84A97500C08497 /* Assets.xcassets */,
 				4BEA35232E84A97500C08497 /* ContentView.swift */,
 				4BEA35242E84A97500C08497 /* InfiniteCoffeeApp.swift */,
+				FF8CD4BA2E97EDC50032C439 /* GoogleService-Info.plist */,
 			);
 			path = InfiniteCoffee;
 			sourceTree = "<group>";
@@ -127,13 +132,6 @@
 				4BEA352A2E84A98F00C08497 /* HomeView.swift */,
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		4BEA35302E84AA8700C08497 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Components;
 			sourceTree = "<group>";
 		};
 		4BEA35442E84AD7600C08497 /* Order */ = {
@@ -191,6 +189,14 @@
 				4BEA355D2E84B09700C08497 /* MainCardCell.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		FFECC2632E8F205300F9AE8C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				FFECC2642E8F208600F9AE8C /* HomeService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BEA35262E84A97500C08497 /* Assets.xcassets in Resources */,
+				FF8CD4BB2E97EDC50032C439 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +294,7 @@
 				4BEA35282E84A97500C08497 /* InfiniteCoffeeApp.swift in Sources */,
 				4BEA357A2E84B26E00C08497 /* ImageLoaderView.swift in Sources */,
 				4BEA35452E84AD7600C08497 /* OrderView.swift in Sources */,
+				FFECC2652E8F208600F9AE8C /* HomeService.swift in Sources */,
 				4BEA35492E84ADB700C08497 /* AccountView.swift in Sources */,
 				4BEA352F2E84AA2F00C08497 /* TabBarView.swift in Sources */,
 				4BEA352D2E84A9AC00C08497 /* HomeViewModel.swift in Sources */,
@@ -434,6 +442,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -442,6 +451,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.XA1.InfiniteCoffee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -466,6 +479,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -474,6 +488,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.XA1.InfiniteCoffee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;

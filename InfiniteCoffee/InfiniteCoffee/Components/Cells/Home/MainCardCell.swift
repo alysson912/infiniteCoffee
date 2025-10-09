@@ -13,7 +13,7 @@ struct MainCardCell: View {
     var body: some View {
         ZStack {
           //  Color.highGrey.ignoresSafeArea()
-            VStack (alignment: .leading, spacing: 5){
+            VStack (alignment: .leading, spacing: 5) {
                 ImageLoaderView()
                     .frame(width: .infinity, height: 350)
                     .clipShape(RoundedRectangle(cornerRadius: 8))
@@ -50,7 +50,7 @@ struct MainCardCell: View {
                 //.padding(.leading, -15)
             }
         }
-        .padding(.leading, 10)
+       
     }
     
     private var mostWantedButton: some View {

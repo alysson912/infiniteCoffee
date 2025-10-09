@@ -11,6 +11,7 @@ enum TabIdentifier: Hashable {
     case home
     case account
     case profile
+    case order
 }
 
 
@@ -20,21 +21,28 @@ struct TabBarView: View {
     
     var body: some View {
         
-        TabView (selection: $selectedTab){
-            Tab("Home", systemImage: "house", value: TabIdentifier.home) {
-                HomeView()
-            }
+        TabView(selection: $selectedTab) {
+            HomeView()
+                .tabItem {
+                    Label("Home", systemImage: "house")
+                }
+                .tag(TabIdentifier.home)
             
-            Tab("Home", systemImage: "person.fill", value: TabIdentifier.account) {
-                AccountView()
-            }
+            AccountView()
+                .tabItem {
+                    Label("Account", systemImage: "person.fill")
+                }
+                .tag(TabIdentifier.account)
             
-            Tab("Order", systemImage: "bag", value: TabIdentifier.home) {
-                OrderView()
-            }
+            OrderView()
+                .tabItem {
+                    Label("Order", systemImage: "bag")
+                }
+                .tag(TabIdentifier.order)
         }
-        //        .TabViewStyle(.automatic)
+        
         .tint(.marron)
+        
     }
     
 }
