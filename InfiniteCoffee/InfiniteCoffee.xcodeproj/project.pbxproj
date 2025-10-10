@@ -131,8 +131,7 @@
 				FF8CD4D62E998A560032C439 /* Info.plist */,
 				FF8CD4CF2E9985CB0032C439 /* Utilities */,
 				FF8CD4BF2E97F17D0032C439 /* Authentication */,
-				FFECC2632E8F205300F9AE8C /* Service */,
-				4BEA35782E84B25000C08497 /* Shared */,
+				FFECC2632E8F205300F9AE8C /* Managers */,
 				4BEA355B2E84B04F00C08497 /* Components */,
 				4BEA35212E84A97500C08497 /* core */,
 				4BEA35222E84A97500C08497 /* Assets.xcassets */,
@@ -192,15 +191,6 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		4BEA35782E84B25000C08497 /* Shared */ = {
-			isa = PBXGroup;
-			children = (
-				4BEA35792E84B26E00C08497 /* ImageLoaderView.swift */,
-				4BEA357B2E84B29B00C08497 /* Constants.swift */,
-			);
-			path = Shared;
-			sourceTree = "<group>";
-		};
 		4BEA357D2E8577A500C08497 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,17 +199,10 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
-		FF8CD4BC2E97F09C0032C439 /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-				FF8CD4BD2E97F0A90032C439 /* AuthenticationManager.swift */,
-			);
-			path = Managers;
-			sourceTree = "<group>";
-		};
 		FF8CD4BF2E97F17D0032C439 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				FF8CD4D42E9986F30032C439 /* SignInGoogleHelper.swift */,
 				FF8CD4D72E998E7B0032C439 /* SignInEmailViewModel.swift */,
 				FF8CD4C22E9982CF0032C439 /* Views */,
 			);
@@ -233,7 +216,6 @@
 				FF8CD4C72E9983C70032C439 /* RootView.swift */,
 				FF8CD4C92E9984120032C439 /* SettingsView.swift */,
 				FF8CD4CB2E99843C0032C439 /* AuthenticationView.swift */,
-				FF8CD4D42E9986F30032C439 /* SignInGoogleHelper.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -241,17 +223,19 @@
 		FF8CD4CF2E9985CB0032C439 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				4BEA357B2E84B29B00C08497 /* Constants.swift */,
+				4BEA35792E84B26E00C08497 /* ImageLoaderView.swift */,
 				FF8CD4CD2E9985990032C439 /* Utilities.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		FFECC2632E8F205300F9AE8C /* Service */ = {
+		FFECC2632E8F205300F9AE8C /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				FF8CD4BC2E97F09C0032C439 /* Managers */,
+				FF8CD4BD2E97F0A90032C439 /* AuthenticationManager.swift */,
 			);
-			path = Service;
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
