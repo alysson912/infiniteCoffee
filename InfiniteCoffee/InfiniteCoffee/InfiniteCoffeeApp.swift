@@ -14,7 +14,7 @@ struct InfiniteCoffeeApp: App {
     
     var body: some Scene {
         WindowGroup {
-            TabBarView()
+            RootView()
         }
     }
     

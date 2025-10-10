@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4BEA35262E84A97500C08497 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BEA35222E84A97500C08497 /* Assets.xcassets */; };
-		4BEA35272E84A97500C08497 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEA35232E84A97500C08497 /* ContentView.swift */; };
 		4BEA35282E84A97500C08497 /* InfiniteCoffeeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEA35242E84A97500C08497 /* InfiniteCoffeeApp.swift */; };
 		4BEA352B2E84A98F00C08497 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEA352A2E84A98F00C08497 /* HomeView.swift */; };
 		4BEA352D2E84A9AC00C08497 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEA352C2E84A9AC00C08497 /* HomeViewModel.swift */; };
@@ -30,14 +29,21 @@
 		4BEA35772E84B22300C08497 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4BEA35762E84B22300C08497 /* GoogleSignInSwift */; };
 		4BEA357A2E84B26E00C08497 /* ImageLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEA35792E84B26E00C08497 /* ImageLoaderView.swift */; };
 		4BEA357C2E84B29B00C08497 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEA357B2E84B29B00C08497 /* Constants.swift */; };
-		FF8CD4BB2E97EDC50032C439 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF8CD4BA2E97EDC50032C439 /* GoogleService-Info.plist */; };
-		FFECC2652E8F208600F9AE8C /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFECC2642E8F208600F9AE8C /* HomeService.swift */; };
+		FF8CD4BE2E97F0A90032C439 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CD4BD2E97F0A90032C439 /* AuthenticationManager.swift */; };
+		FF8CD4C12E97F1A90032C439 /* GoogleSignResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CD4C02E97F1A90032C439 /* GoogleSignResultModel.swift */; };
+		FF8CD4C42E9982E50032C439 /* SignInEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CD4C32E9982E50032C439 /* SignInEmailView.swift */; };
+		FF8CD4C82E9983C70032C439 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CD4C72E9983C70032C439 /* RootView.swift */; };
+		FF8CD4CA2E9984120032C439 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CD4C92E9984120032C439 /* SettingsView.swift */; };
+		FF8CD4CC2E99843C0032C439 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CD4CB2E99843C0032C439 /* AuthenticationView.swift */; };
+		FF8CD4CE2E9985990032C439 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CD4CD2E9985990032C439 /* Utilities.swift */; };
+		FF8CD4D52E9986F30032C439 /* SignInGoogleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CD4D42E9986F30032C439 /* SignInGoogleHelper.swift */; };
+		FF8CD4D82E998E7B0032C439 /* SignInEmailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CD4D72E998E7B0032C439 /* SignInEmailViewModel.swift */; };
+		FF8CD4DC2E9994A70032C439 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF8CD4DB2E9994A70032C439 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4BEA34E72E848FF300C08497 /* InfiniteCoffee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfiniteCoffee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BEA35222E84A97500C08497 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4BEA35232E84A97500C08497 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4BEA35242E84A97500C08497 /* InfiniteCoffeeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteCoffeeApp.swift; sourceTree = "<group>"; };
 		4BEA352A2E84A98F00C08497 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		4BEA352C2E84A9AC00C08497 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -48,8 +54,17 @@
 		4BEA355D2E84B09700C08497 /* MainCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCardCell.swift; sourceTree = "<group>"; };
 		4BEA35792E84B26E00C08497 /* ImageLoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderView.swift; sourceTree = "<group>"; };
 		4BEA357B2E84B29B00C08497 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		FF8CD4BA2E97EDC50032C439 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		FFECC2642E8F208600F9AE8C /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
+		FF8CD4BD2E97F0A90032C439 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		FF8CD4C02E97F1A90032C439 /* GoogleSignResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignResultModel.swift; sourceTree = "<group>"; };
+		FF8CD4C32E9982E50032C439 /* SignInEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInEmailView.swift; sourceTree = "<group>"; };
+		FF8CD4C72E9983C70032C439 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		FF8CD4C92E9984120032C439 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		FF8CD4CB2E99843C0032C439 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
+		FF8CD4CD2E9985990032C439 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		FF8CD4D42E9986F30032C439 /* SignInGoogleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInGoogleHelper.swift; sourceTree = "<group>"; };
+		FF8CD4D62E998A560032C439 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FF8CD4D72E998E7B0032C439 /* SignInEmailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInEmailViewModel.swift; sourceTree = "<group>"; };
+		FF8CD4DB2E9994A70032C439 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,14 +128,16 @@
 		4BEA35252E84A97500C08497 /* InfiniteCoffee */ = {
 			isa = PBXGroup;
 			children = (
+				FF8CD4D62E998A560032C439 /* Info.plist */,
+				FF8CD4CF2E9985CB0032C439 /* Utilities */,
+				FF8CD4BF2E97F17D0032C439 /* Authentication */,
 				FFECC2632E8F205300F9AE8C /* Service */,
 				4BEA35782E84B25000C08497 /* Shared */,
 				4BEA355B2E84B04F00C08497 /* Components */,
 				4BEA35212E84A97500C08497 /* core */,
 				4BEA35222E84A97500C08497 /* Assets.xcassets */,
-				4BEA35232E84A97500C08497 /* ContentView.swift */,
 				4BEA35242E84A97500C08497 /* InfiniteCoffeeApp.swift */,
-				FF8CD4BA2E97EDC50032C439 /* GoogleService-Info.plist */,
+				FF8CD4DB2E9994A70032C439 /* GoogleService-Info.plist */,
 			);
 			path = InfiniteCoffee;
 			sourceTree = "<group>";
@@ -153,6 +170,7 @@
 		4BEA35582E84B00600C08497 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FF8CD4C02E97F1A90032C439 /* GoogleSignResultModel.swift */,
 				4BEA35592E84B01900C08497 /* CoffeModel.swift */,
 			);
 			path = Model;
@@ -191,10 +209,47 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		FF8CD4BC2E97F09C0032C439 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				FF8CD4BD2E97F0A90032C439 /* AuthenticationManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		FF8CD4BF2E97F17D0032C439 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				FF8CD4D72E998E7B0032C439 /* SignInEmailViewModel.swift */,
+				FF8CD4C22E9982CF0032C439 /* Views */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		FF8CD4C22E9982CF0032C439 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FF8CD4C32E9982E50032C439 /* SignInEmailView.swift */,
+				FF8CD4C72E9983C70032C439 /* RootView.swift */,
+				FF8CD4C92E9984120032C439 /* SettingsView.swift */,
+				FF8CD4CB2E99843C0032C439 /* AuthenticationView.swift */,
+				FF8CD4D42E9986F30032C439 /* SignInGoogleHelper.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FF8CD4CF2E9985CB0032C439 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				FF8CD4CD2E9985990032C439 /* Utilities.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		FFECC2632E8F205300F9AE8C /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				FFECC2642E8F208600F9AE8C /* HomeService.swift */,
+				FF8CD4BC2E97F09C0032C439 /* Managers */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -277,7 +332,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BEA35262E84A97500C08497 /* Assets.xcassets in Resources */,
-				FF8CD4BB2E97EDC50032C439 /* GoogleService-Info.plist in Resources */,
+				FF8CD4DC2E9994A70032C439 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,18 +343,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF8CD4D82E998E7B0032C439 /* SignInEmailViewModel.swift in Sources */,
 				4BEA352B2E84A98F00C08497 /* HomeView.swift in Sources */,
+				FF8CD4D52E9986F30032C439 /* SignInGoogleHelper.swift in Sources */,
 				4BEA357C2E84B29B00C08497 /* Constants.swift in Sources */,
-				4BEA35272E84A97500C08497 /* ContentView.swift in Sources */,
 				4BEA35282E84A97500C08497 /* InfiniteCoffeeApp.swift in Sources */,
 				4BEA357A2E84B26E00C08497 /* ImageLoaderView.swift in Sources */,
 				4BEA35452E84AD7600C08497 /* OrderView.swift in Sources */,
-				FFECC2652E8F208600F9AE8C /* HomeService.swift in Sources */,
+				FF8CD4CA2E9984120032C439 /* SettingsView.swift in Sources */,
 				4BEA35492E84ADB700C08497 /* AccountView.swift in Sources */,
 				4BEA352F2E84AA2F00C08497 /* TabBarView.swift in Sources */,
+				FF8CD4C82E9983C70032C439 /* RootView.swift in Sources */,
 				4BEA352D2E84A9AC00C08497 /* HomeViewModel.swift in Sources */,
+				FF8CD4BE2E97F0A90032C439 /* AuthenticationManager.swift in Sources */,
 				4BEA355A2E84B01900C08497 /* CoffeModel.swift in Sources */,
+				FF8CD4CE2E9985990032C439 /* Utilities.swift in Sources */,
 				4BEA355E2E84B09700C08497 /* MainCardCell.swift in Sources */,
+				FF8CD4CC2E99843C0032C439 /* AuthenticationView.swift in Sources */,
+				FF8CD4C12E97F1A90032C439 /* GoogleSignResultModel.swift in Sources */,
+				FF8CD4C42E9982E50032C439 /* SignInEmailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +499,7 @@
 				DEVELOPMENT_TEAM = B4R97N34U3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = InfiniteCoffee/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -474,6 +537,7 @@
 				DEVELOPMENT_TEAM = B4R97N34U3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = InfiniteCoffee/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
