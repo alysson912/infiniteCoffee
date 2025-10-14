@@ -14,14 +14,13 @@ struct HomeView: View {
     var body: some View {
         ZStack {
             
-            Color.red.ignoresSafeArea()
+            Color.customGreen.ignoresSafeArea()
             
-            NavigationStack {
+
                
-                listView
-                    .frame(width: .infinity, height: 450)
+                
                     .navigationTitle("🍟 HomeView")
-            }
+            
         }
         
         

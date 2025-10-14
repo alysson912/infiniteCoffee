@@ -12,12 +12,14 @@ enum TabIdentifier: Hashable {
     case account
     case profile
     case order
+    case settings
 }
 
 
 struct TabBarView: View {
     
     @State private var selectedTab: TabIdentifier = .home
+    @Binding var showSignInView: Bool
     
     var body: some View {
         
@@ -39,6 +41,12 @@ struct TabBarView: View {
                     Label("Order", systemImage: "bag")
                 }
                 .tag(TabIdentifier.order)
+            
+            SettingsView(showSignInView: $showSignInView)
+                .tabItem {
+                    Label("Order", systemImage: "bag")
+                }
+                .tag(TabIdentifier.settings)
         }
         
         .tint(.marron)
@@ -47,5 +55,5 @@ struct TabBarView: View {
     
 }
 #Preview {
-    TabBarView()
+    TabBarView(showSignInView: .constant(false))
 }

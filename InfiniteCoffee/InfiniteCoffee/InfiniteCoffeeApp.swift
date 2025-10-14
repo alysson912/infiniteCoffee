@@ -10,6 +10,7 @@ import FirebaseCore
 
 @main
 struct InfiniteCoffeeApp: App {
+    //setup das dependencias do google
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     
     var body: some Scene {
@@ -19,6 +20,8 @@ struct InfiniteCoffeeApp: App {
     }
     
 }
+
+//MARK: DELEGATE PARA CHAMAR E CONFIGURAR O GOOGLE FIREBASE
 
 class AppDelegate: NSObject, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {

@@ -39,6 +39,7 @@
 		FF8CD4D52E9986F30032C439 /* SignInGoogleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CD4D42E9986F30032C439 /* SignInGoogleHelper.swift */; };
 		FF8CD4D82E998E7B0032C439 /* SignInEmailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CD4D72E998E7B0032C439 /* SignInEmailViewModel.swift */; };
 		FF8CD4DC2E9994A70032C439 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF8CD4DB2E9994A70032C439 /* GoogleService-Info.plist */; };
+		FF8CD4DF2E9ECBB00032C439 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CD4DE2E9ECBB00032C439 /* UserManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,7 @@
 		FF8CD4D62E998A560032C439 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		FF8CD4D72E998E7B0032C439 /* SignInEmailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInEmailViewModel.swift; sourceTree = "<group>"; };
 		FF8CD4DB2E9994A70032C439 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FF8CD4DE2E9ECBB00032C439 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				4BEA35582E84B00600C08497 /* Model */,
+				FF8CD4BF2E97F17D0032C439 /* Authentication */,
 				4BEA35202E84A97500C08497 /* scenes */,
 			);
 			path = core;
@@ -130,7 +133,6 @@
 			children = (
 				FF8CD4D62E998A560032C439 /* Info.plist */,
 				FF8CD4CF2E9985CB0032C439 /* Utilities */,
-				FF8CD4BF2E97F17D0032C439 /* Authentication */,
 				FFECC2632E8F205300F9AE8C /* Managers */,
 				4BEA355B2E84B04F00C08497 /* Components */,
 				4BEA35212E84A97500C08497 /* core */,
@@ -230,10 +232,27 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		FFECC2632E8F205300F9AE8C /* Managers */ = {
+		FF8CD4DD2E9ECB970032C439 /* Firestore */ = {
+			isa = PBXGroup;
+			children = (
+				FF8CD4DE2E9ECBB00032C439 /* UserManager.swift */,
+			);
+			path = Firestore;
+			sourceTree = "<group>";
+		};
+		FF8CD4E02E9ECBE70032C439 /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
 				FF8CD4BD2E97F0A90032C439 /* AuthenticationManager.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		FFECC2632E8F205300F9AE8C /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				FF8CD4E02E9ECBE70032C439 /* SignIn */,
+				FF8CD4DD2E9ECB970032C439 /* Firestore */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -345,6 +364,7 @@
 				4BEA355E2E84B09700C08497 /* MainCardCell.swift in Sources */,
 				FF8CD4CC2E99843C0032C439 /* AuthenticationView.swift in Sources */,
 				FF8CD4C12E97F1A90032C439 /* GoogleSignResultModel.swift in Sources */,
+				FF8CD4DF2E9ECBB00032C439 /* UserManager.swift in Sources */,
 				FF8CD4C42E9982E50032C439 /* SignInEmailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
