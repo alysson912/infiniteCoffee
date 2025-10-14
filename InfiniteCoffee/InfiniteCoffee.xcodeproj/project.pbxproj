@@ -13,7 +13,7 @@
 		4BEA352D2E84A9AC00C08497 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEA352C2E84A9AC00C08497 /* HomeViewModel.swift */; };
 		4BEA352F2E84AA2F00C08497 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEA352E2E84AA2F00C08497 /* TabBarView.swift */; };
 		4BEA35452E84AD7600C08497 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEA35432E84AD7600C08497 /* OrderView.swift */; };
-		4BEA35492E84ADB700C08497 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEA35482E84ADB700C08497 /* AccountView.swift */; };
+		4BEA35492E84ADB700C08497 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEA35482E84ADB700C08497 /* ProfileView.swift */; };
 		4BEA355A2E84B01900C08497 /* CoffeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEA35592E84B01900C08497 /* CoffeModel.swift */; };
 		4BEA355E2E84B09700C08497 /* MainCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEA355D2E84B09700C08497 /* MainCardCell.swift */; };
 		4BEA35612E84B17B00C08497 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 4BEA35602E84B17B00C08497 /* SDWebImageSwiftUI */; };
@@ -40,6 +40,7 @@
 		FF8CD4D82E998E7B0032C439 /* SignInEmailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CD4D72E998E7B0032C439 /* SignInEmailViewModel.swift */; };
 		FF8CD4DC2E9994A70032C439 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF8CD4DB2E9994A70032C439 /* GoogleService-Info.plist */; };
 		FF8CD4DF2E9ECBB00032C439 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CD4DE2E9ECBB00032C439 /* UserManager.swift */; };
+		FF8CD4E42E9EEE550032C439 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CD4E32E9EEE550032C439 /* AuthenticationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,7 +51,7 @@
 		4BEA352C2E84A9AC00C08497 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		4BEA352E2E84AA2F00C08497 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		4BEA35432E84AD7600C08497 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
-		4BEA35482E84ADB700C08497 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		4BEA35482E84ADB700C08497 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		4BEA35592E84B01900C08497 /* CoffeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeModel.swift; sourceTree = "<group>"; };
 		4BEA355D2E84B09700C08497 /* MainCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCardCell.swift; sourceTree = "<group>"; };
 		4BEA35792E84B26E00C08497 /* ImageLoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderView.swift; sourceTree = "<group>"; };
@@ -67,6 +68,7 @@
 		FF8CD4D72E998E7B0032C439 /* SignInEmailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInEmailViewModel.swift; sourceTree = "<group>"; };
 		FF8CD4DB2E9994A70032C439 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FF8CD4DE2E9ECBB00032C439 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		FF8CD4E32E9EEE550032C439 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +114,8 @@
 			children = (
 				4BEA352E2E84AA2F00C08497 /* TabBarView.swift */,
 				4BEA35292E84A98000C08497 /* Home */,
-				4BEA35472E84ADAD00C08497 /* Accont */,
+				4BEA35472E84ADAD00C08497 /* Profile */,
+				FF8CD4E12E9EED550032C439 /* Settings */,
 				4BEA35442E84AD7600C08497 /* Order */,
 			);
 			path = scenes;
@@ -137,6 +140,7 @@
 				4BEA355B2E84B04F00C08497 /* Components */,
 				4BEA35212E84A97500C08497 /* core */,
 				4BEA35222E84A97500C08497 /* Assets.xcassets */,
+				FF8CD4C72E9983C70032C439 /* RootView.swift */,
 				4BEA35242E84A97500C08497 /* InfiniteCoffeeApp.swift */,
 				FF8CD4DB2E9994A70032C439 /* GoogleService-Info.plist */,
 			);
@@ -160,12 +164,12 @@
 			path = Order;
 			sourceTree = "<group>";
 		};
-		4BEA35472E84ADAD00C08497 /* Accont */ = {
+		4BEA35472E84ADAD00C08497 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				4BEA35482E84ADB700C08497 /* AccountView.swift */,
+				4BEA35482E84ADB700C08497 /* ProfileView.swift */,
 			);
-			path = Accont;
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		4BEA35582E84B00600C08497 /* Model */ = {
@@ -204,8 +208,7 @@
 		FF8CD4BF2E97F17D0032C439 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				FF8CD4D42E9986F30032C439 /* SignInGoogleHelper.swift */,
-				FF8CD4D72E998E7B0032C439 /* SignInEmailViewModel.swift */,
+				FF8CD4E52E9EEF900032C439 /* ViewModel */,
 				FF8CD4C22E9982CF0032C439 /* Views */,
 			);
 			path = Authentication;
@@ -214,9 +217,8 @@
 		FF8CD4C22E9982CF0032C439 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FF8CD4E22E9EEE280032C439 /* SubViews */,
 				FF8CD4C32E9982E50032C439 /* SignInEmailView.swift */,
-				FF8CD4C72E9983C70032C439 /* RootView.swift */,
-				FF8CD4C92E9984120032C439 /* SettingsView.swift */,
 				FF8CD4CB2E99843C0032C439 /* AuthenticationView.swift */,
 			);
 			path = Views;
@@ -226,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				4BEA357B2E84B29B00C08497 /* Constants.swift */,
+				FF8CD4D42E9986F30032C439 /* SignInGoogleHelper.swift */,
 				4BEA35792E84B26E00C08497 /* ImageLoaderView.swift */,
 				FF8CD4CD2E9985990032C439 /* Utilities.swift */,
 			);
@@ -246,6 +249,30 @@
 				FF8CD4BD2E97F0A90032C439 /* AuthenticationManager.swift */,
 			);
 			path = SignIn;
+			sourceTree = "<group>";
+		};
+		FF8CD4E12E9EED550032C439 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				FF8CD4C92E9984120032C439 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		FF8CD4E22E9EEE280032C439 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		FF8CD4E52E9EEF900032C439 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FF8CD4D72E998E7B0032C439 /* SignInEmailViewModel.swift */,
+				FF8CD4E32E9EEE550032C439 /* AuthenticationViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		FFECC2632E8F205300F9AE8C /* Managers */ = {
@@ -354,7 +381,8 @@
 				4BEA357A2E84B26E00C08497 /* ImageLoaderView.swift in Sources */,
 				4BEA35452E84AD7600C08497 /* OrderView.swift in Sources */,
 				FF8CD4CA2E9984120032C439 /* SettingsView.swift in Sources */,
-				4BEA35492E84ADB700C08497 /* AccountView.swift in Sources */,
+				4BEA35492E84ADB700C08497 /* ProfileView.swift in Sources */,
+				FF8CD4E42E9EEE550032C439 /* AuthenticationViewModel.swift in Sources */,
 				4BEA352F2E84AA2F00C08497 /* TabBarView.swift in Sources */,
 				FF8CD4C82E9983C70032C439 /* RootView.swift in Sources */,
 				4BEA352D2E84A9AC00C08497 /* HomeViewModel.swift in Sources */,

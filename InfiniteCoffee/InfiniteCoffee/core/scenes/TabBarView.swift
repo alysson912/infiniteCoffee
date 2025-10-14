@@ -12,7 +12,7 @@ enum TabIdentifier: Hashable {
     case account
     case profile
     case order
-    case settings
+    //case settings
 }
 
 
@@ -30,23 +30,23 @@ struct TabBarView: View {
                 }
                 .tag(TabIdentifier.home)
             
-            AccountView()
-                .tabItem {
-                    Label("Account", systemImage: "person.fill")
-                }
-                .tag(TabIdentifier.account)
-            
             OrderView()
                 .tabItem {
                     Label("Order", systemImage: "bag")
                 }
                 .tag(TabIdentifier.order)
             
-            SettingsView(showSignInView: $showSignInView)
+            ProfileView(showSignInView: $showSignInView)
                 .tabItem {
-                    Label("Order", systemImage: "bag")
+                    Label("Account", systemImage: "person.fill")
                 }
-                .tag(TabIdentifier.settings)
+                .tag(TabIdentifier.account)
+            
+//            SettingsView(showSignInView: $showSignInView)
+//                .tabItem {
+//                    Label("Order", systemImage: "bag")
+//                }
+//                .tag(TabIdentifier.settings)
         }
         
         .tint(.marron)
