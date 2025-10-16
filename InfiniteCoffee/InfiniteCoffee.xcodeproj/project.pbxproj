@@ -29,6 +29,7 @@
 		4BEA35772E84B22300C08497 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4BEA35762E84B22300C08497 /* GoogleSignInSwift */; };
 		4BEA357A2E84B26E00C08497 /* ImageLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEA35792E84B26E00C08497 /* ImageLoaderView.swift */; };
 		4BEA357C2E84B29B00C08497 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEA357B2E84B29B00C08497 /* Constants.swift */; };
+		FF1486422EA12893007E32F0 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1486412EA12893007E32F0 /* ProfileViewModel.swift */; };
 		FF8CD4BE2E97F0A90032C439 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CD4BD2E97F0A90032C439 /* AuthenticationManager.swift */; };
 		FF8CD4C12E97F1A90032C439 /* GoogleSignResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CD4C02E97F1A90032C439 /* GoogleSignResultModel.swift */; };
 		FF8CD4C42E9982E50032C439 /* SignInEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CD4C32E9982E50032C439 /* SignInEmailView.swift */; };
@@ -56,6 +57,7 @@
 		4BEA355D2E84B09700C08497 /* MainCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCardCell.swift; sourceTree = "<group>"; };
 		4BEA35792E84B26E00C08497 /* ImageLoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderView.swift; sourceTree = "<group>"; };
 		4BEA357B2E84B29B00C08497 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FF1486412EA12893007E32F0 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		FF8CD4BD2E97F0A90032C439 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		FF8CD4C02E97F1A90032C439 /* GoogleSignResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignResultModel.swift; sourceTree = "<group>"; };
 		FF8CD4C32E9982E50032C439 /* SignInEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInEmailView.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				4BEA35482E84ADB700C08497 /* ProfileView.swift */,
+				FF1486412EA12893007E32F0 /* ProfileViewModel.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -383,6 +386,7 @@
 				FF8CD4CE2E9985990032C439 /* Utilities.swift in Sources */,
 				4BEA355E2E84B09700C08497 /* MainCardCell.swift in Sources */,
 				FF8CD4CC2E99843C0032C439 /* AuthenticationView.swift in Sources */,
+				FF1486422EA12893007E32F0 /* ProfileViewModel.swift in Sources */,
 				FF8CD4C12E97F1A90032C439 /* GoogleSignResultModel.swift in Sources */,
 				FF8CD4DF2E9ECBB00032C439 /* UserManager.swift in Sources */,
 				FF8CD4C42E9982E50032C439 /* SignInEmailView.swift in Sources */,

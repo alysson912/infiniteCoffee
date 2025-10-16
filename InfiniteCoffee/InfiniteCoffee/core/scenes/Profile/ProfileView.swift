@@ -8,31 +8,16 @@
 import SwiftUI
 import Combine
 
-@MainActor
-final class ProfileViewModel: ObservableObject {
-    @Published private(set) var user: DBUser? = nil
-    
-    func loadCurrentUser() async throws {
-        let authDataResult = try AuthenticationManager.shared.getAuthenticatedUser()
-        self.user = try await UserManager.shared.getUser(userId: authDataResult.uid)
-    }
-    
-    // func  para buscar no back-end usuario com os dados atualizados na tela
-    // adicionando dos dados pela model
-    func togglePremiumStatus() {
-        guard let user else { return }
-        let currentValue = user.isPremium ?? false
-        Task {
-            try await UserManager.shared.updateUserPremiumStatus(userId: user.userId, isPremium: !currentValue)
-            self.user = try await UserManager.shared.getUser(userId: user.userId)
-        }
-    }
-}
-
 struct ProfileView: View {
     
     @StateObject var viewModel = ProfileViewModel()
     @Binding var showSignInView: Bool
+    
+    let preferenceOptions: [String] = ["Coado", "Capuccino", "Expresso"]
+    
+    private func preferenceIsSelected(text: String) -> Bool {
+        viewModel.user?.preferences?.contains(text) == true
+    }
     
     
     var body: some View {
@@ -45,11 +30,46 @@ struct ProfileView: View {
                     Text( "Is Anonymous: \(isAnonymous.description.capitalized)")
                 }
                 
-                Button(action: {
+                Button {
                     viewModel.togglePremiumStatus()
-                }, label: {
+                } label: {
                     Text("User is premium: \((user.isPremium ?? false).description.capitalized)")
-                })
+                }
+                
+                VStack {
+                    HStack {
+                        
+                        ForEach(preferenceOptions, id: \.self) { string in
+                            Button(string) {
+                                if preferenceIsSelected(text: string) {
+                                    viewModel.removeUserPreferences(text: string)
+                                } else {
+                                    viewModel.addUserPreferences(text: string)
+                                }
+                                
+                            }
+                            .font(.headline)
+                            .buttonStyle(.borderedProminent)
+                            .tint(preferenceIsSelected(text: string) ? .green : .red)
+                        }
+                        
+                    }
+                    
+                    // Parenteses extra para converter o array em string
+                    Text("User preferences: \((user.preferences ?? [] ).joined(separator: ", "))")
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                }
+                
+                Button {
+                    if user.favoriteCoffe == nil {
+                        viewModel.addFavoriteCoffe()
+                    } else {
+                        viewModel.removeFavoriteCoffe()
+                    }
+                } label: {
+                    Text("Favorite Coffe:  \((user.favoriteCoffe?.title ?? ""))")
+                }
+                
             }
         }
         .task {
@@ -69,8 +89,11 @@ struct ProfileView: View {
     }
 }
 
+
 #Preview {
-    NavigationStack {
-        ProfileView( showSignInView: .constant(false))
-    }
+    
+    RootView()
+//    NavigationStack {
+//        ProfileView( showSignInView: .constant(false))
+//    }
 }

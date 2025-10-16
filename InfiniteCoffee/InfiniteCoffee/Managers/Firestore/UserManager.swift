@@ -8,6 +8,12 @@
 import Foundation
 import FirebaseFirestore
 
+struct Coffe: Codable {
+    let id: String
+    let title: String?
+    let isPopular: Bool?
+    let stars: Int?
+}
 
 struct DBUser: Codable {
     let userId: String
@@ -16,6 +22,8 @@ struct DBUser: Codable {
     let photoUrl: String?
     let dateCreated: Date?
     let isPremium: Bool?
+    let preferences: [String]?
+    let favoriteCoffe: Coffe?
     
     init(auth: AuthDataResultModel) {
         self.userId = auth.uid
@@ -24,6 +32,8 @@ struct DBUser: Codable {
         self.photoUrl = auth.photoUrl
         self.dateCreated = Date()
         self.isPremium = false
+        self.preferences = nil
+        self.favoriteCoffe = nil
     }
     
     //MARK: Retornando um novo usuario com dados iguais ao que ja está cadastrado no banco porem, com os dados adicionais
@@ -33,7 +43,9 @@ struct DBUser: Codable {
         email: String? = nil,
         photoUrl: String? = nil,
         dateCreated: Date? = nil,
-        isPremium: Bool? = nil
+        isPremium: Bool? = nil,
+        preferences: [String]? = nil,
+        favoriteCoffe: Coffe? = nil
     ) {
         self.userId = userId
         self.isAnonymous = isAnonymous
@@ -41,6 +53,8 @@ struct DBUser: Codable {
         self.photoUrl = photoUrl
         self.dateCreated = dateCreated
         self.isPremium = isPremium
+        self.preferences = preferences
+        self.favoriteCoffe = favoriteCoffe
     }
  
     enum CodingKeys: String, CodingKey {
@@ -50,6 +64,8 @@ struct DBUser: Codable {
         case photoUrl = "photo_url"
         case dateCreated = "date_created"
         case isPremium = "user_isPremium"
+        case preferences = "preferences"
+        case favoriteCoffe = "favorite_coffe"
     }
     //MARK: INICIA FAZENDO A DECODIFICACAO CAMELCASE -> OBJETO
     init(from decoder: any Decoder) throws {
@@ -60,6 +76,8 @@ struct DBUser: Codable {
         self.photoUrl = try container.decodeIfPresent(String.self, forKey: .photoUrl)
         self.dateCreated = try container.decodeIfPresent(Date.self, forKey: .dateCreated)
         self.isPremium = try container.decodeIfPresent(Bool.self, forKey: .isPremium)
+        self.preferences = try container.decodeIfPresent([String].self, forKey: .preferences)
+        self.favoriteCoffe = try container.decodeIfPresent(Coffe.self, forKey: .favoriteCoffe)
     }
     
     
@@ -72,6 +90,8 @@ struct DBUser: Codable {
         try container.encodeIfPresent(self.photoUrl, forKey: .photoUrl)
         try container.encodeIfPresent(self.dateCreated, forKey: .dateCreated)
         try container.encodeIfPresent(self.isPremium, forKey: .isPremium)
+        try container.encodeIfPresent(self.preferences, forKey: .preferences)
+        try container.encodeIfPresent(self.favoriteCoffe, forKey: .favoriteCoffe)
     }
     
  
@@ -87,6 +107,14 @@ final class UserManager {
         userCollection.document(userId)
     }
     
+    private let encoder: Firestore.Encoder = {
+        let encoder = Firestore.Encoder()
+        return encoder
+    }()
+    private let dencoder: Firestore.Decoder = {
+        let dencoder = Firestore.Decoder()
+        return dencoder
+    }()
     
     
     //MARK: CRIANDO USER NO FIREBASE
@@ -112,5 +140,33 @@ final class UserManager {
             DBUser.CodingKeys.isPremium.rawValue : isPremium
         ]
         try await userDocument(userId: userId).updateData(data)
+    }
+    
+    //MARK: PREFERENCE USER
+    
+    //add
+    func addUserPreferences(userId: String, preference: String) async throws {
+        let data: [String: Any] = [
+            DBUser.CodingKeys.preferences.rawValue : FieldValue.arrayUnion([preference])
+            ]
+        try await userDocument(userId: userId).updateData(data)
+    }
+    //remove
+    func removeUserPreferences(userId: String, preference: String) async throws {
+        let data: [String: Any] = [DBUser.CodingKeys.preferences.rawValue : FieldValue.arrayRemove([preference])]
+        try await userDocument(userId: userId).updateData(data)
+    }
+    
+    func addFavoriteCoffe(userId: String, coffe: Coffe) async throws {
+        guard let data = try? encoder.encode(coffe) else {
+            throw URLError(.badURL)
+        }
+        let dict: [String: Any] = [DBUser.CodingKeys.favoriteCoffe.rawValue : data]
+        try await userDocument(userId: userId).updateData(dict)
+    }
+    
+    func removeFavoriteCoffe(userId: String) async throws {
+        let data: [String: Any?] = [DBUser.CodingKeys.favoriteCoffe.rawValue : nil]
+        try await userDocument(userId: userId).updateData(data as [AnyHashable : Any])
     }
 }
