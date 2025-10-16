@@ -9,7 +9,7 @@ import SwiftUI
 
 enum TabIdentifier: Hashable {
     case home
-    case account
+    //case account
     case profile
     case order
     //case settings
@@ -36,11 +36,11 @@ struct TabBarView: View {
                 }
                 .tag(TabIdentifier.order)
             
-            ProfileView(showSignInView: $showSignInView)
+            ProfileView( showSignInView: $showSignInView)
                 .tabItem {
-                    Label("Account", systemImage: "person.fill")
+                    Label("Profile", systemImage: "person.fill")
                 }
-                .tag(TabIdentifier.account)
+                .tag(TabIdentifier.profile)
             
 //            SettingsView(showSignInView: $showSignInView)
 //                .tabItem {

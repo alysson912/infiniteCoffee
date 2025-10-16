@@ -8,7 +8,6 @@
 import SwiftUI
 import Combine
 
-
 @MainActor
 final class SettingsViewModel: ObservableObject {
     
@@ -67,11 +66,16 @@ final class SettingsViewModel: ObservableObject {
     }
 }
 
+
+
+
 struct SettingsView: View {
     @StateObject private var viewModel = SettingsViewModel()
     @Binding var showSignInView: Bool
     
     var body: some View {
+        Color.yellow.ignoresSafeArea()
+        
         List {
             Button("Log out") {
                 Task {

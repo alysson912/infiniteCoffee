@@ -217,7 +217,6 @@
 		FF8CD4C22E9982CF0032C439 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				FF8CD4E22E9EEE280032C439 /* SubViews */,
 				FF8CD4C32E9982E50032C439 /* SignInEmailView.swift */,
 				FF8CD4CB2E99843C0032C439 /* AuthenticationView.swift */,
 			);
@@ -257,13 +256,6 @@
 				FF8CD4C92E9984120032C439 /* SettingsView.swift */,
 			);
 			path = Settings;
-			sourceTree = "<group>";
-		};
-		FF8CD4E22E9EEE280032C439 /* SubViews */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SubViews;
 			sourceTree = "<group>";
 		};
 		FF8CD4E52E9EEF900032C439 /* ViewModel */ = {
