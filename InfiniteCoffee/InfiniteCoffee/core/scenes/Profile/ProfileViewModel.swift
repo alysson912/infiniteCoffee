@@ -45,11 +45,13 @@ final class ProfileViewModel: ObservableObject {
         }
     }
     
+
+    // MARK: adicionar UI ao informar cafe favorito
     func addFavoriteCoffe() {
         guard let user else { return }
-        let coffe = Coffe(id: "1", title: "Capuccino 2", isPopular: true, stars: 4)
+        let coffe = Coffe(id: "1", title: "Capuccino", isPopular: true, stars: 4)
         Task {
-            try await UserManager.shared.addFavoriteCoffe(userId: user.userId ,coffe: coffe)
+            try await UserManager.shared.addFavoriteCoffe(userId: user.userId , coffe: coffe)
             self.user = try await UserManager.shared.getUser(userId: user.userId)
         }
     }
