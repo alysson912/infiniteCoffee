@@ -29,10 +29,10 @@ struct HomeView: View {
     }
     private var listView: some View {
         List {
-            ForEach(viewModel.data) { item in
-                MainCardCell(appetizer: item)
-                
-            }
+//            ForEach(viewModel.data) { item in
+//                MainCardCell(appetizer: item)
+//                
+//            }
         }
     }
 

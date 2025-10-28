@@ -14,7 +14,6 @@
 		4BEA352F2E84AA2F00C08497 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEA352E2E84AA2F00C08497 /* TabBarView.swift */; };
 		4BEA35452E84AD7600C08497 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEA35432E84AD7600C08497 /* OrderView.swift */; };
 		4BEA35492E84ADB700C08497 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEA35482E84ADB700C08497 /* ProfileView.swift */; };
-		4BEA355A2E84B01900C08497 /* CoffeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEA35592E84B01900C08497 /* CoffeModel.swift */; };
 		4BEA355E2E84B09700C08497 /* MainCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEA355D2E84B09700C08497 /* MainCardCell.swift */; };
 		4BEA35612E84B17B00C08497 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 4BEA35602E84B17B00C08497 /* SDWebImageSwiftUI */; };
 		4BEA35642E84B20100C08497 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 4BEA35632E84B20100C08497 /* FirebaseAnalytics */; };
@@ -35,7 +34,7 @@
 		FF6F19CF2EA2E5210099E279 /* ProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6F19CE2EA2E5210099E279 /* ProductsView.swift */; };
 		FF6F19D22EA2E54C0099E279 /* ProducstViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6F19D12EA2E54C0099E279 /* ProducstViewModel.swift */; };
 		FF6F19D52EA2E6660099E279 /* ProductCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6F19D42EA2E6660099E279 /* ProductCellView.swift */; };
-		FF6F19D82EA2E7DA0099E279 /* Mock.json in Resources */ = {isa = PBXBuildFile; fileRef = FF6F19D72EA2E7DA0099E279 /* Mock.json */; };
+		FF6F19D82EA2E7DA0099E279 /* CoffeData.json in Resources */ = {isa = PBXBuildFile; fileRef = FF6F19D72EA2E7DA0099E279 /* CoffeData.json */; };
 		FF8CD4BE2E97F0A90032C439 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CD4BD2E97F0A90032C439 /* AuthenticationManager.swift */; };
 		FF8CD4C42E9982E50032C439 /* SignInEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CD4C32E9982E50032C439 /* SignInEmailView.swift */; };
 		FF8CD4C82E9983C70032C439 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CD4C72E9983C70032C439 /* RootView.swift */; };
@@ -58,7 +57,6 @@
 		4BEA352E2E84AA2F00C08497 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		4BEA35432E84AD7600C08497 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		4BEA35482E84ADB700C08497 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		4BEA35592E84B01900C08497 /* CoffeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeModel.swift; sourceTree = "<group>"; };
 		4BEA355D2E84B09700C08497 /* MainCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCardCell.swift; sourceTree = "<group>"; };
 		4BEA35792E84B26E00C08497 /* ImageLoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderView.swift; sourceTree = "<group>"; };
 		4BEA357B2E84B29B00C08497 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -68,7 +66,7 @@
 		FF6F19CE2EA2E5210099E279 /* ProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsView.swift; sourceTree = "<group>"; };
 		FF6F19D12EA2E54C0099E279 /* ProducstViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProducstViewModel.swift; sourceTree = "<group>"; };
 		FF6F19D42EA2E6660099E279 /* ProductCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCellView.swift; sourceTree = "<group>"; };
-		FF6F19D72EA2E7DA0099E279 /* Mock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Mock.json; sourceTree = "<group>"; };
+		FF6F19D72EA2E7DA0099E279 /* CoffeData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CoffeData.json; sourceTree = "<group>"; };
 		FF8CD4BD2E97F0A90032C439 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		FF8CD4C32E9982E50032C439 /* SignInEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInEmailView.swift; sourceTree = "<group>"; };
 		FF8CD4C72E9983C70032C439 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
@@ -137,7 +135,6 @@
 		4BEA35212E84A97500C08497 /* core */ = {
 			isa = PBXGroup;
 			children = (
-				4BEA35582E84B00600C08497 /* Model */,
 				FF8CD4BF2E97F17D0032C439 /* Authentication */,
 				4BEA35202E84A97500C08497 /* scenes */,
 			);
@@ -189,7 +186,6 @@
 		4BEA35582E84B00600C08497 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				4BEA35592E84B01900C08497 /* CoffeModel.swift */,
 				FF6F19C82EA2E1CE0099E279 /* ProductDatabase.swift */,
 			);
 			path = Model;
@@ -214,6 +210,7 @@
 		FF6F19CC2EA2E4EC0099E279 /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				4BEA35582E84B00600C08497 /* Model */,
 				FF6F19D12EA2E54C0099E279 /* ProducstViewModel.swift */,
 				FF6F19D02EA2E52F0099E279 /* Views */,
 			);
@@ -240,7 +237,7 @@
 		FF6F19D62EA2E7C10099E279 /* Mock */ = {
 			isa = PBXGroup;
 			children = (
-				FF6F19D72EA2E7DA0099E279 /* Mock.json */,
+				FF6F19D72EA2E7DA0099E279 /* CoffeData.json */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -403,7 +400,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF6F19D82EA2E7DA0099E279 /* Mock.json in Resources */,
+				FF6F19D82EA2E7DA0099E279 /* CoffeData.json in Resources */,
 				4BEA35262E84A97500C08497 /* Assets.xcassets in Resources */,
 				FF8CD4DC2E9994A70032C439 /* GoogleService-Info.plist in Resources */,
 			);
@@ -431,7 +428,6 @@
 				FF8CD4C82E9983C70032C439 /* RootView.swift in Sources */,
 				4BEA352D2E84A9AC00C08497 /* HomeViewModel.swift in Sources */,
 				FF8CD4BE2E97F0A90032C439 /* AuthenticationManager.swift in Sources */,
-				4BEA355A2E84B01900C08497 /* CoffeModel.swift in Sources */,
 				FF6F19CB2EA2E4720099E279 /* ProductManager.swift in Sources */,
 				FF8CD4CE2E9985990032C439 /* Utilities.swift in Sources */,
 				4BEA355E2E84B09700C08497 /* MainCardCell.swift in Sources */,

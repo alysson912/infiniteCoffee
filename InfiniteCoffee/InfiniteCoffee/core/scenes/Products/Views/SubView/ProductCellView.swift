@@ -8,7 +8,7 @@ import SwiftUI
 
 struct ProductCellView: View {
     
-    let product: Product
+    let product: CoffeModel
     
     var body: some View {
         HStack (alignment: .top, spacing:  12){
@@ -28,8 +28,8 @@ struct ProductCellView: View {
                     .font(.headline)
                     .foregroundStyle(.primary)
                 
-                Text("Price: S" + String(product.price ?? 1))
-                Text("Rating:" + String(product.rating ?? 1.0))
+                Text("Price: S" + String(product.price ?? 0))
+                Text("Rating:" + String(product.rating ?? 3.0))
                 Text("Category:" + (product.category ?? ""))
                 Text("Brand:" + String(product.brand ?? "n/a"))
             }
@@ -40,6 +40,6 @@ struct ProductCellView: View {
 }
 
 #Preview {
-    ProductCellView(product: ProductDatabase.sampleProduct)
+    ProductCellView(product: MockData.sampleAppetizer)
     //ProductCellView(product: Product.init(from: Product(id: 1) as! Decoder))
 }
