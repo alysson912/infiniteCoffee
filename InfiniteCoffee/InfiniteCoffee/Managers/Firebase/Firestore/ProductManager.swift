@@ -35,7 +35,7 @@ final class ProductsManager {
     private func productDocument(productId: String) -> DocumentReference {
         productsCollection.document(productId)
     }
-    
+    //MARK: push to firebase
     func uploadProduct(product: CoffeModel)  {
         try? productDocument(productId: (product.id)).setData(from: product, merge: false)
     }
@@ -60,52 +60,25 @@ extension Query {
             
         })
     }
-    
-    
 }
 
-extension ProductsManager {
-    func getHomeFromJson(){
-        guard let url = Bundle.main.url(forResource: "CoffeData", withExtension: "json") else { return }
-
-        do {
-            let data = try Data(contentsOf: url)
-            let coffeData = try JSONDecoder().decode(CoffeData.self, from: data)
-            let listProducts = coffeData.productList
-// upload to firebase
-            for product in listProducts {
-                 ProductsManager.shared.uploadProduct(product: product)
-            }
-            
-        } catch {
-           print(error)
-        }
-    }
-}
-
-    
-    
-    // MARK: FUNC PARA ENVIAR TODO O JSON MOCKADO PARA O DB
-    //        func downloadProductsAndUploadToFirebase() {
-    //            guard let url = URL(string: "https://dummyjson.com/products") else { return }
-    //
-    //            Task {
-    //                do {
-    //                    let (data, _) = try await URLSession.shared.data(from: url)
-    //                    let products = try JSONDecoder().decode(DataProducts.self, from: data)
-    //                    let productArray = products.products
-    //
-    //                    for product in productArray {
-    //                        try await ProductsManager.shared.uploadProduct(product: product)
-    //                    }
-    //
-    //                    print("SUCCESS")
-    //                    print(products.products.count)
-    //                } catch {
-    //                    print(error)
-    //                }
-    //            }
-    //        }
-    //
-    //}
-
+// MARK: FUNC PARA ENVIAR TODO O JSON MOCKADO PARA O DB
+//extension ProductsManager {
+//    func getHomeFromJson(){
+//        guard let url = Bundle.main.url(forResource: "CoffeData", withExtension: "json") else { return }
+//
+//        do {
+//            let data = try Data(contentsOf: url)
+//            let coffeData = try JSONDecoder().decode(CoffeData.self, from: data)
+//            let listProducts = coffeData.productList
+//// upload to firebase
+//            for product in listProducts {
+//                 ProductsManager.shared.uploadProduct(product: product)
+//            }
+//            
+//        } catch {
+//           print(error)
+//        }
+//    }
+//}
+//
