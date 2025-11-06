@@ -11,7 +11,7 @@
 //   let dataProducts = try? JSONDecoder().decode(DataProducts.self, from: jsonData)
 
 struct CoffeData: Codable {
-    let productList: [CoffeModel]?
+    let productList: [CoffeModel]
     
 }
 

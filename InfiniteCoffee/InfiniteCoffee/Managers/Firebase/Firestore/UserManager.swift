@@ -12,7 +12,7 @@ struct Coffe: Codable {
     let id: String
     let title: String?
     let isPopular: Bool?
-    let stars: Int?
+    let rating: Int?
 }
 
 struct DBUser: Codable {

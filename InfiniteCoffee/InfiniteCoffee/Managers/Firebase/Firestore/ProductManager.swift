@@ -8,26 +8,11 @@
 import Foundation
 import FirebaseFirestore
 
-enum Error: Swift.Error {
-    case fileNoFound(name: String)
-    case fileDecodingFailed(name: String, Swift.Error)
-   // case erroRequest(AFError) //  Retorno do Alamofire (de erro)
-}
-
-enum TypeFetch {
-    case mock
-    case request
-}
-
-
-protocol GenericService: AnyObject {
-    typealias completion <T> = (_ result: T, _ failure: Error?) -> Void
-}
-
-protocol ProductsViewModelelegate: GenericService {
-    func getHomeFromJson(completion: @escaping completion<CoffeData?>)
-}
-
+    enum Error: Swift.Error {
+        case fileNoFound(name: String)
+        case fileDecodingFailed(name: String, Swift.Error)
+       // case erroRequest(AFError) //  Retorno do Alamofire (de erro)
+    }
 
 final class ProductsManager {
     
@@ -51,8 +36,8 @@ final class ProductsManager {
         productsCollection.document(productId)
     }
     
-    func uploadProduct(product: CoffeModel) async throws {
-        try productDocument(productId: (product.id)).setData(from: product, merge: false)
+    func uploadProduct(product: CoffeModel)  {
+        try? productDocument(productId: (product.id)).setData(from: product, merge: false)
     }
     
     func getProduct(productId: String) async throws -> CoffeModel {
@@ -79,20 +64,48 @@ extension Query {
     
 }
 
-extension ProductsManager: ProductsViewModelelegate {
-    //MARK: MOCK DATA.JSON
-    func getHomeFromJson(completion: @escaping completion<CoffeData?>) {
-        if let url = Bundle.main.url(forResource: "CoffeData", withExtension: "json") {
-            do {
-                let data = try Data(contentsOf: url)
-                let coffeData: CoffeData = try JSONDecoder().decode(CoffeData.self, from: data)
-                completion(coffeData, nil)
-                print(coffeData)
-            } catch {
-                completion(nil, Error.fileDecodingFailed(name: "CoffeData", error))
+extension ProductsManager {
+    func getHomeFromJson(){
+        guard let url = Bundle.main.url(forResource: "CoffeData", withExtension: "json") else { return }
+
+        do {
+            let data = try Data(contentsOf: url)
+            let coffeData = try JSONDecoder().decode(CoffeData.self, from: data)
+            let listProducts = coffeData.productList
+// upload to firebase
+            for product in listProducts {
+                 ProductsManager.shared.uploadProduct(product: product)
             }
-        } else {
-            completion(nil, Error.fileNoFound(name: "CoffeData"))
+            
+        } catch {
+           print(error)
         }
     }
 }
+
+    
+    
+    // MARK: FUNC PARA ENVIAR TODO O JSON MOCKADO PARA O DB
+    //        func downloadProductsAndUploadToFirebase() {
+    //            guard let url = URL(string: "https://dummyjson.com/products") else { return }
+    //
+    //            Task {
+    //                do {
+    //                    let (data, _) = try await URLSession.shared.data(from: url)
+    //                    let products = try JSONDecoder().decode(DataProducts.self, from: data)
+    //                    let productArray = products.products
+    //
+    //                    for product in productArray {
+    //                        try await ProductsManager.shared.uploadProduct(product: product)
+    //                    }
+    //
+    //                    print("SUCCESS")
+    //                    print(products.products.count)
+    //                } catch {
+    //                    print(error)
+    //                }
+    //            }
+    //        }
+    //
+    //}
+
