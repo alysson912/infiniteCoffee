@@ -46,6 +46,8 @@
 		FF8CD4DC2E9994A70032C439 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF8CD4DB2E9994A70032C439 /* GoogleService-Info.plist */; };
 		FF8CD4DF2E9ECBB00032C439 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CD4DE2E9ECBB00032C439 /* UserManager.swift */; };
 		FF8CD4E42E9EEE550032C439 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CD4E32E9EEE550032C439 /* AuthenticationViewModel.swift */; };
+		FFC95E632EBE1CC70063DF34 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC95E622EBE1CC70063DF34 /* CircleView.swift */; };
+		FFC95E652EBE1DDF0063DF34 /* PopularPillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC95E642EBE1DDF0063DF34 /* PopularPillView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +81,8 @@
 		FF8CD4DB2E9994A70032C439 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FF8CD4DE2E9ECBB00032C439 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		FF8CD4E32E9EEE550032C439 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		FFC95E622EBE1CC70063DF34 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		FFC95E642EBE1DDF0063DF34 /* PopularPillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularPillView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,7 +206,7 @@
 		4BEA355C2E84B05800C08497 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				4BEA355D2E84B09700C08497 /* MainCardCell.swift */,
+				FFC95E602EBE1C9E0063DF34 /* MainCardVIew */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -315,6 +319,24 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		FFC95E602EBE1C9E0063DF34 /* MainCardVIew */ = {
+			isa = PBXGroup;
+			children = (
+				4BEA355D2E84B09700C08497 /* MainCardCell.swift */,
+				FFC95E612EBE1CAB0063DF34 /* subViews */,
+			);
+			path = MainCardVIew;
+			sourceTree = "<group>";
+		};
+		FFC95E612EBE1CAB0063DF34 /* subViews */ = {
+			isa = PBXGroup;
+			children = (
+				FFC95E622EBE1CC70063DF34 /* CircleView.swift */,
+				FFC95E642EBE1DDF0063DF34 /* PopularPillView.swift */,
+			);
+			path = subViews;
+			sourceTree = "<group>";
+		};
 		FFECC2632E8F205300F9AE8C /* Managers */ = {
 			isa = PBXGroup;
 			children = (
@@ -423,6 +445,7 @@
 				4BEA35452E84AD7600C08497 /* OrderView.swift in Sources */,
 				FF8CD4CA2E9984120032C439 /* SettingsView.swift in Sources */,
 				4BEA35492E84ADB700C08497 /* ProfileView.swift in Sources */,
+				FFC95E652EBE1DDF0063DF34 /* PopularPillView.swift in Sources */,
 				FF8CD4E42E9EEE550032C439 /* AuthenticationViewModel.swift in Sources */,
 				4BEA352F2E84AA2F00C08497 /* TabBarView.swift in Sources */,
 				FF8CD4C82E9983C70032C439 /* RootView.swift in Sources */,
@@ -436,6 +459,7 @@
 				FF1486422EA12893007E32F0 /* ProfileViewModel.swift in Sources */,
 				FF6F19CF2EA2E5210099E279 /* ProductsView.swift in Sources */,
 				FF8CD4DF2E9ECBB00032C439 /* UserManager.swift in Sources */,
+				FFC95E632EBE1CC70063DF34 /* CircleView.swift in Sources */,
 				FF6F19C92EA2E1CE0099E279 /* ProductDatabase.swift in Sources */,
 				FF8CD4C42E9982E50032C439 /* SignInEmailView.swift in Sources */,
 			);

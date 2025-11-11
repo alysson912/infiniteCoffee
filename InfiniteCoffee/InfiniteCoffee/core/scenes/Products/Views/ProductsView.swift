@@ -15,15 +15,23 @@ struct ProductsView: View {
     
     var body: some View {
         
-        List {
-            ForEach(viewModel.products) { product in
-                Text(product.title ?? "n/a")
+        ZStack() {
+            VStack () {
+                List {
+                    ForEach(viewModel.products) { product in
+                        
+                        MainCardCell(coffe: product)
+                          
+                        
+                    }
+                }
+                .shadow(radius: 10)
+                .navigationTitle("Products")
+                .task {
+                    try? await viewModel.getAllProducts()
+                }
             }
-        }
-        
-        .navigationTitle("Products")
-        .task {
-            try? await viewModel.getAllProducts()
+            
         }
     }
 }

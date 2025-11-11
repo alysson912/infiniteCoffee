@@ -11,7 +11,7 @@ import SDWebImageSwiftUI
 
 struct ImageLoaderView: View {
     
-    var urlString: String = Constants.randomImage
+    var urlString: String = Constants.randomImageCoffe
     var resizingMode: ContentMode = .fill
     
     var body: some View {
@@ -25,6 +25,7 @@ struct ImageLoaderView: View {
                     .allowsHitTesting(false)// ao clicar o usuario estará clicando no retangulo atras da imagem, e nao nela em si. (gambiarra)
             )
             .clipped()
+            
     }
 }
 
@@ -33,4 +34,5 @@ struct ImageLoaderView: View {
         .cornerRadius(30)
         .padding(40)
         .padding(.vertical, 60)
+    
 }

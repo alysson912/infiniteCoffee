@@ -11,7 +11,7 @@
             "brand": "Café Napoli",
             "category": "Expresso",
             "thumbnail": "https://coffee.alexflipnote.dev/random",
-            "images": ["https://coffee.alexflipnote.dev/random"]
+            "images": "https://coffee.alexflipnote.dev/random"
         },
         {
             "id": "2",
@@ -24,7 +24,7 @@
             "brand": "Café Torino",
             "category": "Expresso",
             "thumbnail": "https://coffee.alexflipnote.dev/random",
-            "images": ["https://coffee.alexflipnote.dev/random"]
+            "images": "https://coffee.alexflipnote.dev/random"
         },
         {
             "id": "3",
@@ -37,7 +37,7 @@
             "brand": "Café Seattle",
             "category": "Expresso",
             "thumbnail": "https://coffee.alexflipnote.dev/random",
-            "images": ["https://coffee.alexflipnote.dev/random"]
+            "images": "https://coffee.alexflipnote.dev/random"
         },
         {
             "id": "4",
@@ -50,7 +50,7 @@
             "brand": "Café Milano",
             "category": "Latte",
             "thumbnail": "https://coffee.alexflipnote.dev/random",
-            "images": ["https://coffee.alexflipnote.dev/random"]
+            "images": "https://coffee.alexflipnote.dev/random"
         },
         {
             "id": "5",
@@ -63,7 +63,7 @@
             "brand": "Café Milano",
             "category": "Latte",
             "thumbnail": "https://coffee.alexflipnote.dev/random",
-            "images": ["https://coffee.alexflipnote.dev/random"]
+            "images": "https://coffee.alexflipnote.dev/random"
         },
         {
             "id": "6",
@@ -76,7 +76,7 @@
             "brand": "Café Sydney",
             "category": "Latte",
             "thumbnail": "https://coffee.alexflipnote.dev/random",
-            "images": ["https://coffee.alexflipnote.dev/random"]
+            "images": "https://coffee.alexflipnote.dev/random"
         },
         {
             "id": "7",
@@ -89,7 +89,7 @@
             "brand": "Café Roma",
             "category": "Cappuccino",
             "thumbnail": "https://coffee.alexflipnote.dev/random",
-            "images": ["https://coffee.alexflipnote.dev/random"]
+            "images": "https://coffee.alexflipnote.dev/random"
         },
         {
             "id": "8",
@@ -102,7 +102,7 @@
             "brand": "Café Sydney",
             "category": "Cappuccino",
             "thumbnail": "https://coffee.alexflipnote.dev/random",
-            "images": ["https://coffee.alexflipnote.dev/random"]
+            "images": "https://coffee.alexflipnote.dev/random"
         },
         {
             "id": "9",
@@ -115,7 +115,7 @@
             "brand": "Café Firenze",
             "category": "Macchiato",
             "thumbnail": "https://coffee.alexflipnote.dev/random",
-            "images": ["https://coffee.alexflipnote.dev/random"]
+            "images": "https://coffee.alexflipnote.dev/random"
         },
         {
             "id": "10",
@@ -128,7 +128,7 @@
             "brand": "Café Firenze",
             "category": "Macchiato",
             "thumbnail": "https://coffee.alexflipnote.dev/random",
-            "images": ["https://coffee.alexflipnote.dev/random"]
+            "images": "https://coffee.alexflipnote.dev/random"
         },
         {
             "id": "11",
@@ -141,7 +141,7 @@
             "brand": "Café Torino",
             "category": "Mocha",
             "thumbnail": "https://coffee.alexflipnote.dev/random",
-            "images": ["https://coffee.alexflipnote.dev/random"]
+            "images": "https://coffee.alexflipnote.dev/random"
         },
         {
             "id": "12",
@@ -154,7 +154,7 @@
             "brand": "Café Milano",
             "category": "Mocha",
             "thumbnail": "https://coffee.alexflipnote.dev/random",
-            "images": ["https://coffee.alexflipnote.dev/random"]
+            "images": "https://coffee.alexflipnote.dev/random"
         },
         {
             "id": "13",
@@ -167,7 +167,7 @@
             "brand": "Café Torino",
             "category": "Mocha",
             "thumbnail": "https://coffee.alexflipnote.dev/random",
-            "images": ["https://coffee.alexflipnote.dev/random"]
+            "images": "https://coffee.alexflipnote.dev/random"
         },
         {
             "id": "14",
@@ -180,7 +180,7 @@
             "brand": "Café Porto",
             "category": "Cold Brew",
             "thumbnail": "https://coffee.alexflipnote.dev/random",
-            "images": ["https://coffee.alexflipnote.dev/random"]
+            "images": "https://coffee.alexflipnote.dev/random"
         },
         {
             "id": "15",
@@ -193,7 +193,7 @@
             "brand": "Café Portland",
             "category": "Cold Brew",
             "thumbnail": "https://coffee.alexflipnote.dev/random",
-            "images": ["https://coffee.alexflipnote.dev/random"]
+            "images": "https://coffee.alexflipnote.dev/random"
         },
         {
             "id": "16",
@@ -206,7 +206,7 @@
             "brand": "Café Vienna",
             "category": "Vienense",
             "thumbnail": "https://coffee.alexflipnote.dev/random",
-            "images": ["https://coffee.alexflipnote.dev/random"]
+            "images": "https://coffee.alexflipnote.dev/random"
         },
         {
             "id": "17",
@@ -219,7 +219,7 @@
             "brand": "Café Seoul",
             "category": "Dalgona",
             "thumbnail": "https://coffee.alexflipnote.dev/random",
-            "images": ["https://coffee.alexflipnote.dev/random"]
+            "images": "https://coffee.alexflipnote.dev/random"
         },
         {
             "id": "18",
@@ -232,7 +232,7 @@
             "brand": "Café Istanbul",
             "category": "Turco",
             "thumbnail": "https://coffee.alexflipnote.dev/random",
-            "images": ["https://coffee.alexflipnote.dev/random"]
+            "images": "https://coffee.alexflipnote.dev/random"
         },
         {
             "id": "19",
@@ -245,7 +245,7 @@
             "brand": "Café Dolce",
             "category": "Sobremesa",
             "thumbnail": "https://coffee.alexflipnote.dev/random",
-            "images": ["https://coffee.alexflipnote.dev/random"]
+            "images": "https://coffee.alexflipnote.dev/random"
         },
         {
             "id": "20",
@@ -258,7 +258,7 @@
             "brand": "Café Dolce",
             "category": "Sobremesa",
             "thumbnail": "https://coffee.alexflipnote.dev/random",
-            "images": ["https://coffee.alexflipnote.dev/random"]
+            "images": "https://coffee.alexflipnote.dev/random"
         },
         {
             "id": "21",
@@ -271,7 +271,7 @@
             "brand": "Café Paris",
             "category": "Breve",
             "thumbnail": "https://coffee.alexflipnote.dev/random",
-            "images": ["https://coffee.alexflipnote.dev/random"]
+            "images": "https://coffee.alexflipnote.dev/random"
         },
         {
             "id": "22",
@@ -284,7 +284,7 @@
             "brand": "Café Madrid",
             "category": "Cortado",
             "thumbnail": "https://coffee.alexflipnote.dev/random",
-            "images": ["https://coffee.alexflipnote.dev/random"]
+            "images": "https://coffee.alexflipnote.dev/random"
         },
         {
             "id": "23",
@@ -297,7 +297,7 @@
             "brand": "Café Dublin",
             "category": "Alcoólico",
             "thumbnail": "https://coffee.alexflipnote.dev/random",
-            "images": ["https://coffee.alexflipnote.dev/random"]
+            "images": "https://coffee.alexflipnote.dev/random"
         },
         {
             "id": "24",
@@ -310,7 +310,7 @@
             "brand": "Café Dublin",
             "category": "Alcoólico",
             "thumbnail": "https://coffee.alexflipnote.dev/random",
-            "images": ["https://coffee.alexflipnote.dev/random"]
+            "images": "https://coffee.alexflipnote.dev/random"
         },
         {
             "id": "25",
@@ -323,7 +323,7 @@
             "brand": "Café Milano",
             "category": "Chocolate",
             "thumbnail": "https://coffee.alexflipnote.dev/random",
-            "images": ["https://coffee.alexflipnote.dev/random"]
+            "images": "https://coffee.alexflipnote.dev/random"
         }
     ]
 }

@@ -24,7 +24,7 @@ struct CoffeModel: Codable, Identifiable {
     let stock: Int?
     let category: String?
     let thumbnail: String?
-    let images: [String]?
+    let images: String
 }
 
 
@@ -42,7 +42,7 @@ struct MockData {
         stock: 18,
         category: "Flat White",
         thumbnail: "https://coffee.alexflipnote.dev/random",
-        images: ["https://coffee.alexflipnote.dev/random"]
+        images: "https://coffee.alexflipnote.dev/random"
     )
     
     static let appetizers = [sampleAppetizer, sampleAppetizer, sampleAppetizer, sampleAppetizer]
