@@ -8,17 +8,22 @@
 import SwiftUI
 
 struct CircleView: View {
+    
+    @Binding var selectItem: Bool
+    
     var body: some View {
         ZStack {
             Circle()
                 .fill(.marron)
                 .frame(width: 40 ,height: 40)
             
-            Image(systemName: "circle.fill")
-                .foregroundStyle(.highGrey)
-                .font(.system(size: 15))
+            if selectItem {
+                Image(systemName: "circle.fill")
+                    .foregroundStyle(.highGrey)
+                    .font(.system(size: 15))
+            } else {
                 
-            
+            }
             
             
         }
@@ -28,5 +33,8 @@ struct CircleView: View {
 }
 
 #Preview {
-    CircleView()
+    VStack {
+        CircleView(selectItem: .constant(false))
+        CircleView(selectItem: .constant(true))
+    }
 }

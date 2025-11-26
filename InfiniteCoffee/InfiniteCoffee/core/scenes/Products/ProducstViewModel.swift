@@ -30,3 +30,10 @@ final class ProductsViewModel: ObservableObject {
 
 
 
+extension ProductsViewModel {
+    static var mock: ProductsViewModel {
+        let vm = ProductsViewModel()
+        vm.products = MockData.appetizers   // <<< seus dados mockados
+        return vm
+    }
+}

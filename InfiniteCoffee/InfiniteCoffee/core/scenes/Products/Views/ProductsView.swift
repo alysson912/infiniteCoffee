@@ -9,37 +9,41 @@ import SwiftUI
 import Combine
 
 struct ProductsView: View {
-    @State var productData: CoffeModel?
+    @StateObject  var viewModel: ProductsViewModel
+   // @Binding  var selectionItem: Bool
     
-    @StateObject private var viewModel = ProductsViewModel()
-    
-    var body: some View {
+    private let colunas = [
+        GridItem(.flexible()),
+        GridItem(.flexible())
+    ]
         
-        ZStack() {
-            VStack () {
-                List {
-                    ForEach(viewModel.products) { product in
-                        
-                        MainCardCell(coffe: product)
-                          
-                        
+    var body: some View {
+            VStack {
+                ScrollView {
+                    LazyVGrid(columns: colunas, spacing: 4) {
+                        ForEach(viewModel.products) { product in
+                            MainCardCell(coffe: product)
+                            
+                        }
                     }
                 }
+                
                 .shadow(radius: 10)
-                .navigationTitle("Products")
+              //  .navigationTitle("Products")
                 .task {
                     try? await viewModel.getAllProducts()
                 }
             }
-            
+           
         }
     }
-}
+
 
 
 
 #Preview {
     NavigationStack {
-        ProductsView()
+        ProductsView(viewModel: .mock)
     }
+    
 }

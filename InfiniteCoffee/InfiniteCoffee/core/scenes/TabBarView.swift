@@ -8,7 +8,7 @@
 import SwiftUI
 
 enum TabIdentifier: Hashable {
-    case home
+    case product
     //case account
     case profile
     case order
@@ -18,17 +18,17 @@ enum TabIdentifier: Hashable {
 
 struct TabBarView: View {
     
-    @State private var selectedTab: TabIdentifier = .home
+    @State private var selectedTab: TabIdentifier = .product
     @Binding var showSignInView: Bool
     
     var body: some View {
         
         TabView(selection: $selectedTab) {
-            HomeView()
-                .tabItem {
-                    Label("Home", systemImage: "house")
-                }
-                .tag(TabIdentifier.home)
+          //  ProductsView(viewModel: <#ProductsViewModel#>)
+//                .tabItem {
+//                    Label("Home", systemImage: "house")
+//                }
+//                .tag(TabIdentifier.product)
             
             OrderView()
                 .tabItem {
