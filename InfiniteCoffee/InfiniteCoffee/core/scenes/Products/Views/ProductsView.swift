@@ -10,8 +10,7 @@ import Combine
 
 struct ProductsView: View {
     @StateObject  var viewModel: ProductsViewModel
-   // @Binding  var selectionItem: Bool
-    
+       
     private let colunas = [
         GridItem(.flexible()),
         GridItem(.flexible())
@@ -27,7 +26,7 @@ struct ProductsView: View {
                         }
                     }
                 }
-                
+//                .padding(.horizontal, 14)
                 .shadow(radius: 10)
               //  .navigationTitle("Products")
                 .task {

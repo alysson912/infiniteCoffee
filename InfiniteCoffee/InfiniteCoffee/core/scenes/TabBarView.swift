@@ -20,15 +20,16 @@ struct TabBarView: View {
     
     @State private var selectedTab: TabIdentifier = .product
     @Binding var showSignInView: Bool
+    @State var productViewModel: ProductsViewModel
     
     var body: some View {
         
         TabView(selection: $selectedTab) {
-          //  ProductsView(viewModel: <#ProductsViewModel#>)
-//                .tabItem {
-//                    Label("Home", systemImage: "house")
-//                }
-//                .tag(TabIdentifier.product)
+           ProductsView(viewModel: productViewModel)
+                .tabItem {
+                    Label("Home", systemImage: "house")
+                }
+                .tag(TabIdentifier.product)
             
             OrderView()
                 .tabItem {
@@ -55,5 +56,5 @@ struct TabBarView: View {
     
 }
 #Preview {
-    TabBarView(showSignInView: .constant(false))
+    TabBarView(showSignInView: .constant(false), productViewModel: ProductsViewModel())
 }

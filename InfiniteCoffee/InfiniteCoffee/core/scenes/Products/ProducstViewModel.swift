@@ -21,19 +21,18 @@ import Combine
 final class ProductsViewModel: ObservableObject {
     @Published private(set) var products: [CoffeModel] = []
     
-    
-    public func getAllProducts() async throws {
-        self.products = try await ProductsManager.shared.getAllProducts()
-    }
-}
-
-
-
-
-extension ProductsViewModel {
     static var mock: ProductsViewModel {
         let vm = ProductsViewModel()
         vm.products = MockData.appetizers   // <<< seus dados mockados
         return vm
     }
+    
+    public func getAllProducts() async throws {
+        self.products = try await ProductsManager.shared.getAllProducts()
+    }
+    
+   
+
+    
 }
+
