@@ -20,12 +20,12 @@ struct TabBarView: View {
     
     @State private var selectedTab: TabIdentifier = .product
     @Binding var showSignInView: Bool
-    @State var productViewModel: ProductsViewModel
+    @EnvironmentObject var productViewModel: ProductListViewModel
     
     var body: some View {
         
         TabView(selection: $selectedTab) {
-           ProductsView(viewModel: productViewModel)
+           ProductListView()
                 .tabItem {
                     Label("Home", systemImage: "house")
                 }
@@ -49,12 +49,13 @@ struct TabBarView: View {
 //                }
 //                .tag(TabIdentifier.settings)
         }
-        
+      //  .environmentObject(productViewModel)
         .tint(.marron)
         
     }
     
 }
 #Preview {
-    TabBarView(showSignInView: .constant(false), productViewModel: ProductsViewModel())
+    TabBarView(showSignInView: .constant(false))
+        .environmentObject(ProductListViewModel.mock)
 }

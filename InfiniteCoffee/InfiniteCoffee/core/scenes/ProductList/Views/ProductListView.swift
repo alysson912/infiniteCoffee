@@ -8,8 +8,9 @@
 import SwiftUI
 import Combine
 
-struct ProductsView: View {
-    @StateObject  var viewModel: ProductsViewModel
+struct ProductListView: View {
+    @EnvironmentObject var viewModel: ProductListViewModel
+    
        
     private let colunas = [
         GridItem(.flexible()),
@@ -26,7 +27,7 @@ struct ProductsView: View {
                         }
                     }
                 }
-//                .padding(.horizontal, 14)
+                .padding(.horizontal, 6)
                 .shadow(radius: 10)
               //  .navigationTitle("Products")
                 .task {
@@ -42,7 +43,9 @@ struct ProductsView: View {
 
 #Preview {
     NavigationStack {
-        ProductsView(viewModel: .mock)
+            ProductListView()
+                .environmentObject(ProductListViewModel.mock)
+        }
     }
     
-}
+

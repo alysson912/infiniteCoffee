@@ -21,8 +21,8 @@ struct RatingPillView: View {
         }
        
         .fontWeight(.medium)
-        .padding(.vertical, 6)
-        .padding(.horizontal, 12)
+        .padding(.vertical, 1)
+        .padding(.horizontal, 4)
         
         .background(Color.highGrey)
         .clipShape(RoundedRectangle(cornerRadius: 32))

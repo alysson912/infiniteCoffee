@@ -31,7 +31,7 @@
 		FF1486422EA12893007E32F0 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1486412EA12893007E32F0 /* ProfileViewModel.swift */; };
 		FF6F19C92EA2E1CE0099E279 /* ProductDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6F19C82EA2E1CE0099E279 /* ProductDatabase.swift */; };
 		FF6F19CB2EA2E4720099E279 /* ProductManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6F19CA2EA2E4720099E279 /* ProductManager.swift */; };
-		FF6F19CF2EA2E5210099E279 /* ProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6F19CE2EA2E5210099E279 /* ProductsView.swift */; };
+		FF6F19CF2EA2E5210099E279 /* ProductListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6F19CE2EA2E5210099E279 /* ProductListView.swift */; };
 		FF6F19D22EA2E54C0099E279 /* ProducstViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6F19D12EA2E54C0099E279 /* ProducstViewModel.swift */; };
 		FF6F19D82EA2E7DA0099E279 /* CoffeData.json in Resources */ = {isa = PBXBuildFile; fileRef = FF6F19D72EA2E7DA0099E279 /* CoffeData.json */; };
 		FF8CD4BE2E97F0A90032C439 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CD4BD2E97F0A90032C439 /* AuthenticationManager.swift */; };
@@ -65,7 +65,7 @@
 		FF1486412EA12893007E32F0 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		FF6F19C82EA2E1CE0099E279 /* ProductDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDatabase.swift; sourceTree = "<group>"; };
 		FF6F19CA2EA2E4720099E279 /* ProductManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductManager.swift; sourceTree = "<group>"; };
-		FF6F19CE2EA2E5210099E279 /* ProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsView.swift; sourceTree = "<group>"; };
+		FF6F19CE2EA2E5210099E279 /* ProductListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListView.swift; sourceTree = "<group>"; };
 		FF6F19D12EA2E54C0099E279 /* ProducstViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProducstViewModel.swift; sourceTree = "<group>"; };
 		FF6F19D72EA2E7DA0099E279 /* CoffeData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CoffeData.json; sourceTree = "<group>"; };
 		FF8CD4BD2E97F0A90032C439 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
@@ -126,8 +126,8 @@
 		4BEA35202E84A97500C08497 /* scenes */ = {
 			isa = PBXGroup;
 			children = (
-				FF6F19CC2EA2E4EC0099E279 /* Products */,
 				4BEA352E2E84AA2F00C08497 /* TabBarView.swift */,
+				FF6F19CC2EA2E4EC0099E279 /* ProductList */,
 				4BEA35292E84A98000C08497 /* Home */,
 				4BEA35472E84ADAD00C08497 /* Profile */,
 				FF8CD4E12E9EED550032C439 /* Settings */,
@@ -211,20 +211,20 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		FF6F19CC2EA2E4EC0099E279 /* Products */ = {
+		FF6F19CC2EA2E4EC0099E279 /* ProductList */ = {
 			isa = PBXGroup;
 			children = (
 				4BEA35582E84B00600C08497 /* Model */,
 				FF6F19D12EA2E54C0099E279 /* ProducstViewModel.swift */,
 				FF6F19D02EA2E52F0099E279 /* Views */,
 			);
-			path = Products;
+			path = ProductList;
 			sourceTree = "<group>";
 		};
 		FF6F19D02EA2E52F0099E279 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				FF6F19CE2EA2E5210099E279 /* ProductsView.swift */,
+				FF6F19CE2EA2E5210099E279 /* ProductListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -449,7 +449,7 @@
 				4BEA355E2E84B09700C08497 /* MainCardCell.swift in Sources */,
 				FF8CD4CC2E99843C0032C439 /* AuthenticationView.swift in Sources */,
 				FF1486422EA12893007E32F0 /* ProfileViewModel.swift in Sources */,
-				FF6F19CF2EA2E5210099E279 /* ProductsView.swift in Sources */,
+				FF6F19CF2EA2E5210099E279 /* ProductListView.swift in Sources */,
 				FF8CD4DF2E9ECBB00032C439 /* UserManager.swift in Sources */,
 				FFC95E632EBE1CC70063DF34 /* CircleView.swift in Sources */,
 				FF6F19C92EA2E1CE0099E279 /* ProductDatabase.swift in Sources */,

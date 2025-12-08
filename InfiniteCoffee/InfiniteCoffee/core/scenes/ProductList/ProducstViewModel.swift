@@ -18,11 +18,11 @@ import Foundation
 import Combine
 
 @MainActor
-final class ProductsViewModel: ObservableObject {
+final class ProductListViewModel: ObservableObject {
     @Published private(set) var products: [CoffeModel] = []
     
-    static var mock: ProductsViewModel {
-        let vm = ProductsViewModel()
+    static var mock: ProductListViewModel {
+        let vm = ProductListViewModel()
         vm.products = MockData.appetizers   // <<< seus dados mockados
         return vm
     }

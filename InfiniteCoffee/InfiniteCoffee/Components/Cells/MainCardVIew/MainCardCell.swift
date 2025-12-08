@@ -20,13 +20,21 @@ struct MainCardCell: View {
     var body: some View {
         
         ScrollView(.vertical) {
-            LazyVStack(){
-                headerCell
-                pillsSection
-                aboutSection                    
+            ZStack() {
+                LazyVStack(){
+                    headerCell
+                    //  pillsSection
+                    aboutSection
+                }
+                .padding(.horizontal, 14)
+                .clipShape(RoundedRectangle(cornerRadius: 35))
             }
-            .padding(.horizontal, 14)
-            .clipShape(RoundedRectangle(cornerRadius: 35))
+            .overlay (alignment: .top){
+                pillsSection
+                    .padding(.horizontal)
+                    .padding(.top, 14)
+            }
+            
         }
     }
     
@@ -40,7 +48,7 @@ struct MainCardCell: View {
                     .aspectRatio(contentMode: resizingMode)
                     .frame(height: 200)
                     .clipped()
-                
+                  
                 
                 
             } placeholder: {
@@ -60,9 +68,10 @@ struct MainCardCell: View {
     private var pillsSection: some View {
         HStack {
             
-            if pupular {
+//            if pupular {
                 PopularPillView()
-            }
+            
+//            }
             Spacer()
                         
                 RatingPillView(coffe: coffe)

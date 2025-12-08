@@ -17,7 +17,7 @@ struct RootView: View {
                 NavigationStack {
                //     ProfileView(showSignInView: $showSignInView)
                   // ProductsView()
-                    TabBarView(showSignInView: $showSignInView, productViewModel: ProductsViewModel())
+                    TabBarView(showSignInView: $showSignInView)
                 }
                 
             }
